@@ -7,6 +7,7 @@ export type ExperienceItem = {
   role: string;
   org: string;
   period: string;
+  location: string;
   details: string[];
 };
 
@@ -28,9 +29,9 @@ export const profile = {
   name: "Adolf James Urian",
   headline: "BSIT Student | Web Developer",
   focus: "System design, clean code, and scalable architecture",
-  status: "Open to freelance collaborations and internship roles",
+  status: "Open to freelance collaborations and job opportunities",
   about:
-    "Second-year BSIT student with a focus on clean interface systems, reusable components, and responsive layouts. I enjoy translating ideas into structured, production-ready websites and keeping performance and readability at the center of every build.",
+    "Full-stack Web Developer with hands-on experience designing and delivering production-ready applications using React, Next.js, TypeScript, and PostgreSQL. Currently a President's Lister BS Information Technology student at STI College Cubao, bringing strong fundamentals in clean architecture, REST API development, and modern full-stack practices.",
 };
 
 export const techStack: TagGroup[] = [
@@ -39,48 +40,56 @@ export const techStack: TagGroup[] = [
     items: ["TypeScript", "JavaScript", "HTML", "CSS", "SQL"],
   },
   {
-    label: "Frameworks",
-    items: ["React", "Node.js", "Next.js"],
+    label: "Frameworks & Libraries",
+    items: ["React", "Node.js", "Next.js", "TanStack", "Drizzle ORM", "Prisma"],
+  },
+  {
+    label: "Practices",
+    items: ["Clean Architecture", "REST API Development"],
+  },
+  {
+    label: "Databases & Storage",
+    items: ["PostgreSQL", "MongoDB", "Redis", "Cloudflare R2"],
+  },
+  {
+    label: "Services",
+    items: ["Google Gemini API", "Supabase", "Neon", "Upstash", "Firebase"],
   },
   {
     label: "Tools",
-    items: ["Git", "Github", "Postman", "Docker"],
-  },
-  {
-    label: "Databases",
-    items: ["PostgreSQL", "MongoDB", "Redis"],
+    items: ["Git", "Github", "Github Copilot", "Postman", "Docker"],
   },
 ];
 
 export const experience: ExperienceItem[] = [
   {
-    role: "Freelance Web Developer",
-    org: "Independent client work (Contract)",
-    period: "August 2025 - January 2026",
+    role: "Freelance Software Developer",
+    org: "Self-employed",
+    period: "August 2025 - February 2026",
+    location: "Antipolo City, Philippines",
     details: [
-      "Co-developed a custom full-stack Point of Sale (POS) system tailored for a billiard hall to streamline operational transactions and automate table session tracking.",
-      "Architected relational database schemas and engineered robust backend services to process high-accuracy billing updates and inventory management workflows.",
-      "Successfully finalized and delivered the core functional MVP over a structured six-month cycle prior to a client-side strategic pivot in business operations.",
-      "Collaborated within a dual-developer environment to establish clean architectural boundaries, define API specifications, and govern version control using Git.",
+      "Co-developed a full-stack POS system for a 4-table billiard hall using Next.js and React.",
+      "Implemented Role-Based Access Control (RBAC) with defined roles: admin & staff, and integrated a Reservation System, improving user management and system reliability.",
+      "Architected PostgreSQL (Supabase) schemas and engineered backend billing and session-tracking services, resulting in a functional MVP delivered in 6 months. ",
     ],
   },
 ];
 
 export const projects: ProjectItem[] = [
   {
-    title: "QuizGem - RAG-based Quiz Generator",
+    title: "QuizGem - Quiz Generator (Learning Tool)",
     summary:
-      "An AI-powered quiz generation platform that generate quizzes from PDF documents using Google Gemini AI, with support for multiple question types, collaborative sharing, and comprehensive attempt tracking.",
+      "Independently built a web application that generates context-faithful quizzes from user-uploaded academic handouts, supporting configurable sets of 10, 20, 30, or 50 questions – addressing the lack of interactivity in standard AI-generated quizzes and ensuring responses are strictly grounded in the user's own materials rather than general AI knowledge.",
     tags: [
       "React",
-      "Next.js",
-      "PostgreSQL",
-      "Redis",
-      "Cloudflare R2",
+      "Docker",
+      "Neon/PostgreSQL",
+      "Upstash/Redis",
       "Google Gemini API",
+      "Cloudflare R2",
     ],
     demoUrl: "https://quizgem.vercel.app",
-    sourceUrl: "https://github.com/ajurian/quiz-generator",
+    sourceUrl: "https://github.com/ajurian/quizgem",
   },
   {
     title: "Task Board",
@@ -94,18 +103,18 @@ export const projects: ProjectItem[] = [
 
 export const awards: AwardItem[] = [
   {
+    title: "President's Lister (Highest Academic Honor)",
+    detail: "STI College Cubao - GWA of 1.00-1.50",
+    year: "2024-Present",
+  },
+  {
     title: "3rd Place for Homepage Design Competition",
-    detail: "STI Academic Center Cubao",
+    detail: "STI College Cubao",
     year: "2025",
   },
   {
-    title: "President's Lister",
-    detail: "STI Academic Center Cubao",
-    year: "AY 2024-2025",
-  },
-  {
     title: "1st Runner Up for Homepage Design Competition",
-    detail: "STI Academic Center Cubao",
+    detail: "STI College Cubao",
     year: "2024",
   },
 ];
