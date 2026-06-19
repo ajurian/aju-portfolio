@@ -29,7 +29,7 @@ export const profile = {
   name: "Adolf James Urian",
   headline: "BSIT Student | Web Developer",
   focus: "System design, clean code, and scalable architecture",
-  status: "Open to freelance collaborations and job opportunities",
+  status: "Open to freelance collaborations, job opportunities and internship roles",
   about:
     "Full-stack Web Developer with hands-on experience designing and delivering production-ready applications using React, Next.js, TypeScript, and PostgreSQL. Currently a President's Lister BS Information Technology student at STI College Cubao, bringing strong fundamentals in clean architecture, REST API development, and modern full-stack practices.",
 };
